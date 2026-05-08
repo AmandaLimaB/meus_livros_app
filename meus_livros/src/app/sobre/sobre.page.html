@@ -1,13 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>sobre</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> 
+    </ion-buttons>
+    <ion-title>Sobre</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">sobre</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <div class="perfil-container">
+    <ion-avatar class="foto-perfil">
+      <img src="assets/img/amanda.jpg" alt="Foto da Amanda">
+    </ion-avatar>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Amanda Lima</ion-card-title>
+        <ion-card-subtitle>Estudante de Engenharia Informática</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Olá! Sou aluna no IPVC e este é o meu projeto "Os Meus Livros" para a disciplina de Dispositivos Móveis.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-list>
+      <ion-item lines="none">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label>limaa9000@gmail.com</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="logo-github" slot="start"></ion-icon>
+        <ion-label>github.com/AmandaLimaB</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

@@ -1,3 +1,78 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-item lines="none" color="primary">
+          <ion-avatar slot="start">
+            <img src="assets/img/amanda.jpg" onerror="this.src='assets/icon/favicon.png'">
+          </ion-avatar>
+          <ion-label>
+            <h2>Bem-vindo!</h2>
+            <p>Amanda Lima</p>
+          </ion-label>
+        </ion-item>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item routerLink="/home" detail="false">
+            <ion-icon name="library-outline" slot="start"></ion-icon>
+            <ion-label>Biblioteca</ion-label>
+          </ion-item>
+          <ion-item routerLink="/categorias" detail="false">
+            <ion-icon name="grid-outline" slot="start"></ion-icon>
+            <ion-label>Categorias</ion-label>
+          </ion-item>
+          <ion-item routerLink="/adicionar" detail="false">
+            <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+            <ion-label>Adicionar</ion-label>
+          </ion-item>
+          <ion-item routerLink="/perfil" detail="false">
+            <ion-icon name="person-outline" slot="start"></ion-icon>
+            <ion-label>Perfil</ion-label>
+          </ion-item>
+          <ion-item routerLink="/sobre" detail="false">
+            <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+            <ion-label>Sobre</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div id="main-content">
+    
+    <ion-router-outlet></ion-router-outlet>
+
+    <ion-footer>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home" routerLink="/home">
+          <ion-icon name="library"></ion-icon>
+          <ion-label>Biblioteca</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="categorias" routerLink="/categorias">
+          <ion-icon name="grid"></ion-icon>
+          <ion-label>Categorias</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="adicionar" routerLink="/adicionar">
+          <ion-icon name="add-circle" color="primary"></ion-icon>
+          <ion-label>Novo</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="perfil" routerLink="/perfil">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="sobre" routerLink="/sobre">
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-label>Sobre</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-footer>
+  </div>
 </ion-app>

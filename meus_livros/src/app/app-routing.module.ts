@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'biblioteca',
-    loadChildren: () => import('./biblioteca/biblioteca.module').then( m => m.BibliotecaPageModule)
-  },
-  {
     path: 'categorias',
     loadChildren: () => import('./categorias/categorias.module').then( m => m.CategoriasPageModule)
   },

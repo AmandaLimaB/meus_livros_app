@@ -1,0 +1,16 @@
+#main-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+ion-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+ion-content {
+  --padding-bottom: 60px;
+}
