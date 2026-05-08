@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+
+/* Muda a cor do título no Header */
+ion-title {
+  color: #ffffff !important; 
+}
+
+/* Muda a cor do ícone do menu (hambúrguer) */
+ion-menu-button {
+  --color: #ffffff !important;
+}
+
+/* Muda a cor dos botões de navegação no header */
+ion-buttons ion-button {
+  --color: #ffffff !important;
+}
