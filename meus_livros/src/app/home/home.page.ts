@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  public nomeInstituto: string;
+
+  constructor() {
+    this.nomeInstituto = 'Instituto Politécnico de Viana do Castelo';
+  }
 
 }
