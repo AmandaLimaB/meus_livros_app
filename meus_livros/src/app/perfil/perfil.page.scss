@@ -12,3 +12,36 @@ ion-menu-button {
 ion-buttons ion-button {
   --color: #ffffff !important;
 }
+
+.auth-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  h2 {
+    font-weight: bold;
+    color: var(--ion-color-primary);
+    font-size: 26px;
+  }
+
+  p {
+    color: #666;
+  }
+}
+
+.form-container {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.terms-item {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  --padding-start: 0;
+}
+
+ion-item {
+  --padding-start: 10px;
+  margin-bottom: 5px;
+}

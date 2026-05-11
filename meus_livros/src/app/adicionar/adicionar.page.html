@@ -7,9 +7,59 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding"> 
+<ion-content class="ion-padding">
   <div id="lista-livros">
-    <h2>Adicionar</h2>
-    <p>Add...</p>
+    <h2>Adicionar Livro</h2>
+    <p>Preencha os detalhes da sua nova leitura.</p>
+
+    <ion-segment value="nao-leu" (ionChange)="statusChange($event)">
+      <ion-segment-button value="nao-leu">
+        <ion-label>Não Lido</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="leu">
+        <ion-label>Já Lido</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div class="form-container ion-margin-top">
+      
+      <ion-item lines="full">
+        <ion-label position="stacked">Título do Livro</ion-label>
+        <ion-input placeholder="Ex: O Senhor dos Anéis"></ion-input>
+      </ion-item>
+
+      <div *ngIf="foiLido">
+        <ion-item lines="full">
+          <ion-label position="stacked">Autor</ion-label>
+          <ion-input placeholder="Nome do autor"></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="stacked">Género</ion-label>
+          <ion-select placeholder="Selecione o género">
+            <ion-select-option value="ficcao">Ficção Científica</ion-select-option>
+            <ion-select-option value="romance">Romance</ion-select-option>
+            <ion-select-option value="fantasia">Fantasia</ion-select-option>
+            <ion-select-option value="tecnico">Técnico</ion-select-option>
+            <ion-select-option value="suspense">Mistério</ion-select-option>
+            <ion-select-option value="biografia">Biografia</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="stacked">Ano de Publicação</ion-label>
+          <ion-input type="number" placeholder="Ex: 2024"></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="stacked">Sinopse</ion-label>
+          <ion-textarea placeholder="Breve resumo do livro..." rows="4"></ion-textarea>
+        </ion-item>
+      </div>
+
+      <ion-button expand="block" class="ion-margin-top" color="primary">
+        Guardar Livro
+      </ion-button>
+    </div>
   </div>
 </ion-content>

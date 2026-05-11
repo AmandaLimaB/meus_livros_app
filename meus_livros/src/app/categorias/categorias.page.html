@@ -7,9 +7,74 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding"> 
+<ion-content class="ion-padding">
   <div id="lista-livros">
-    <h2>Categoria</h2>
-    <p>Categoria...</p>
+    <h2>Explorar por Género</h2>
+    <p>Selecione uma categoria para filtrar os seus livros.</p>
+
+
+<ion-select-option value="ficcao"></ion-select-option>
+            <ion-select-option value="romance"></ion-select-option>
+            <ion-select-option value="fantasia"></ion-select-option>
+            <ion-select-option value="tecnico"></ion-select-option>
+            <ion-select-option value="suspense"></ion-select-option>
+            <ion-select-option value="biografia"></ion-select-option>
+
+
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="block" fill="outline" color="primary" class="cat-button">
+            <div class="button-content">
+              <ion-label>Ficção Científica</ion-label>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button expand="block" fill="outline" color="primary" class="cat-button">
+            <div class="button-content">
+              <ion-label>Romance</ion-label>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button expand="block" fill="outline" color="primary" class="cat-button">
+            <div class="button-content">
+              <!-- <ion-icon name="rocket-outline"></ion-icon> -->
+              <ion-label>Fantasia</ion-label>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button expand="block" fill="outline" color="primary" class="cat-button">
+            <div class="button-content">
+              <ion-label>Técnico</ion-label>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button expand="block" fill="outline" color="primary" class="cat-button">
+            <div class="button-content">
+              <ion-label>Mistério</ion-label>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button expand="block" fill="outline" color="primary" class="cat-button">
+            <div class="button-content">
+              <ion-label>Biografia</ion-label>
+            </div>
+          </ion-button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

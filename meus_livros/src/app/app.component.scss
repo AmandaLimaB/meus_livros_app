@@ -15,3 +15,15 @@ ion-content {
   --padding-bottom: 60px;
 }
 
+ion-tab-bar {
+  /* Cor dos botões quando NÃO estão selecionados */
+  --color: #a0a0a0; 
+
+  /* Cor do botão quando está ATIVO (página atual) */
+  --color-selected: #ffffff; 
+}
+
+/* Para garantir que o texto (label) mude */
+ion-label {
+  font-weight: 500;
+}

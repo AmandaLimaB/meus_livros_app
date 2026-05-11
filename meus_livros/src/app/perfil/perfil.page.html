@@ -7,9 +7,55 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding"> 
-  <div id="lista-livros">
-    <h2>Perfil</h2>
-    <p>Perfil...</p>
+<ion-content class="ion-padding">
+  <div class="auth-container ion-text-center">
+    <h2>Bem-vindo!</h2>
+    <p>Crie o seu perfil para começar a organizar a sua biblioteca.</p>
+  </div>
+
+  <div class="form-container">
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label position="stacked">Nome Completo</ion-label>
+        <ion-input type="text" placeholder="Ex: Amanda Lima"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">E-mail</ion-label>
+        <ion-input type="email" placeholder="seu@email.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Nome de Utilizador</ion-label>
+        <ion-input type="text" placeholder="@amanda_it"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Palavra-passe</ion-label>
+        <ion-input type="password" placeholder="Mínimo 8 caracteres"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Confirmar Palavra-passe</ion-label>
+        <ion-input type="password" placeholder="Repita a palavra-passe"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-item lines="none" class="terms-item">
+      <ion-checkbox slot="start" color="primary"></ion-checkbox>
+      <ion-label class="ion-text-wrap">
+        Aceito os termos de privacidade e proteção de dados.
+      </ion-label>
+    </ion-item>
+
+    <div class="ion-padding-top">
+      <ion-button expand="block" color="primary" shape="round">
+        Registar Perfil
+      </ion-button>
+      
+      <ion-button expand="block" fill="clear" color="medium" routerLink="/login">
+        Já tenho uma conta
+      </ion-button>
+    </div>
   </div>
 </ion-content>
