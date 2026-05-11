@@ -27,3 +27,24 @@ ion-tab-bar {
 ion-label {
   font-weight: 500;
 }
+
+.header-search-bar {
+  display: flex;          
+  align-items: center;    
+  justify-content: center;
+  gap: 5px;               
+  margin-bottom: 15px;
+
+  ion-searchbar {
+    flex: 1;              
+    padding: 0;           
+    --border-radius: 10px;
+  }
+
+  .filter-btn {
+    --padding-start: 5px;
+    --padding-end: 5px;
+    margin: 0;            
+    height: 44px;         
+  }
+}

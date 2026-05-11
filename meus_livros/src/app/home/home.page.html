@@ -8,10 +8,59 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  
-  <div id="lista-livros">
-    <h2>Minha Biblioteca</h2>
-    <p>Aqui podes ver a lista dos livros que estou a ler atualmente...</p>
-    </div>
+  <div class="search-wrapper">
+    <ion-searchbar 
+      placeholder="Pesquisar livros..." 
+      animated="true" 
+      class="custom-search">
+    </ion-searchbar>
+    <ion-button fill="clear" color="primary" class="filter-btn">
+      <ion-icon slot="icon-only" name="filter-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="assets/img/livro1.jpg" alt="Capa do Livro">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>Jogos Vorazes</h2>
+      <p>Suzanne Collins</p>
+      <ion-note color="primary">Lendo: Cap. 5</ion-note>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="assets/img/livro4.jpg" alt="Capa do Livro">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>Em Chamas</h2>
+      <p>Suzanne Collins</p>
+      <ion-note color="primary">Lendo: Cap. 7</ion-note>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="assets/img/livro2.jpg" alt="Capa do Livro">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>A Esperança</h2>
+      <p>Suzanne Collins</p>
+      <ion-note color="primary">Lendo: Cap. 1</ion-note>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="assets/img/livro5.jpg" alt="Capa do Livro">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>Duna</h2>
+      <p>Frank Herbert</p>
+      <ion-note color="primary">Lendo: Cap. 3</ion-note>
+    </ion-label>
+  </ion-item>
 
 </ion-content>

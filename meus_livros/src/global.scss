@@ -63,3 +63,20 @@ ion-menu ion-item {
   --color: #2c3e50 !important;
   --ion-color-primary: #2c3e50 !important;
 }
+
+ion-tab-bar {
+  --color-selected: var(--ion-color-primary-tint);
+}
+
+ion-tab-button.tab-selected {
+  ion-label {
+    font-weight: bold;      
+    font-size: 14px;        
+    letter-spacing: 0.5px;  
+  }
+
+  ion-icon {
+    transform: scale(1.2);  
+    transition: 0.2s;       
+  }
+}
